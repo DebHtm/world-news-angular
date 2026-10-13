@@ -1,1 +1,11 @@
-<p>Category filter placeholder</p>
+<label for="news-category">Category</label>
+<select
+  #categorySelect
+  id="news-category"
+  [value]="defaultCategory"
+  (change)="onCategoryChange(categorySelect.value)"
+>
+  @for (category of categories; track category.value) {
+    <option [value]="category.value">{{ category.label }}</option>
+  }
+</select>

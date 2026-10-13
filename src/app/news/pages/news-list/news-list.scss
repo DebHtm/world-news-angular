@@ -1,3 +1,36 @@
 :host {
   display: block;
 }
+
+.news-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+.news-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 240px);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-cards {
+  min-height: 280px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+@media (max-width: 600px) {
+  .news-controls {
+    grid-template-columns: 1fr;
+  }
+}

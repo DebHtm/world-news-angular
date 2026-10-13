@@ -1,1 +1,8 @@
-<p>Search bar placeholder</p>
+<label for="news-search">Search news</label>
+<input
+  #searchInput
+  id="news-search"
+  type="search"
+  placeholder="Enter keywords"
+  (input)="searchChange.emit(searchInput.value)"
+/>

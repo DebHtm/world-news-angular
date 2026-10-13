@@ -29,6 +29,14 @@ export interface NewsResponse {
   articles: Article[];
 }
 
+export interface NewsErrorResponse {
+  status: 'error';
+  code: string;
+  message: string;
+}
+
+export type NewsApiResponse = NewsResponse | NewsErrorResponse;
+
 export interface NewsFilters {
   category: NewsCategory;
   query: string;

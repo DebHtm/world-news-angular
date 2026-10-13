@@ -1,4 +1,12 @@
-<h2>Latest news</h2>
-<app-category-filter />
-<app-search-bar />
-<app-article-card />
+<section class="news-page" aria-labelledby="news-title">
+  <h2 id="news-title">Latest news</h2>
+
+  <div class="news-controls">
+    <app-search-bar (searchChange)="onSearchChange($event)" />
+    <app-category-filter (categoryChange)="onCategoryChange($event)" />
+  </div>
+
+  <section class="news-cards" aria-label="News articles">
+    <app-article-card [article]="mockArticle" />
+  </section>
+</section>
