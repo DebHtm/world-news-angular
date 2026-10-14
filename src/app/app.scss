@@ -1,0 +1,38 @@
+@use '../styles/colors' as c;
+@use '../styles/typography' as t;
+
+:host {
+  display: block;
+}
+header {
+  background: c.$surface;
+  border-bottom: 1px solid c.$border;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+h1 {
+  margin: 0;
+  font-family: t.$heading;
+  font-size: 1.65rem;
+  letter-spacing: -0.06em;
+}
+.brand-mark {
+  color: c.$accent;
+  margin-right: 0.4rem;
+}
+.header-caption {
+  color: c.$muted;
+  font-size: t.$small;
+}
+@media (max-width: 600px) {
+  .header-caption {
+    display: none;
+  }
+}

@@ -1,3 +1,43 @@
-<h2>Article details</h2>
-<p>Selected article details will appear here.</p>
-<a routerLink="/news">Back to news</a>
+<section class="details">
+  <a class="back-link" routerLink="/news" [queryParams]="listParams()">← Back to news</a>
+
+  @if (article(); as selectedArticle) {
+    <article>
+      <h2>{{ selectedArticle.title }}</h2>
+      <p class="metadata">
+        {{ selectedArticle.source.name }}
+        @if (selectedArticle.author) {
+          · {{ selectedArticle.author }}
+        }
+        ·
+        <time [attr.datetime]="selectedArticle.publishedAt">
+          {{ selectedArticle.publishedAt | date: 'medium' }}
+        </time>
+      </p>
+      @if (selectedArticle.urlToImage) {
+        <img [src]="selectedArticle.urlToImage" [alt]="selectedArticle.title" />
+      }
+      @if (selectedArticle.description) {
+        <p>{{ selectedArticle.description }}</p>
+      }
+      @if (selectedArticle.content) {
+        <p>{{ selectedArticle.content }}</p>
+      }
+      <p>The available text is an excerpt. Visit the publisher for the full article.</p>
+      <a
+        class="original-link"
+        [href]="selectedArticle.url"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read original article
+      </a>
+    </article>
+  } @else {
+    <h2>Article unavailable</h2>
+    <p>
+      Open an article from the news list. This link may not have saved article data in this browser
+      tab.
+    </p>
+  }
+</section>

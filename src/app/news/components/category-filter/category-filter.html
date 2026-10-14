@@ -2,10 +2,11 @@
 <select
   #categorySelect
   id="news-category"
-  [value]="defaultCategory"
   (change)="onCategoryChange(categorySelect.value)"
 >
   @for (category of categories; track category.value) {
-    <option [value]="category.value">{{ category.label }}</option>
+    <option [value]="category.value" [selected]="category.value === selectedCategory()">
+      {{ category.value === selectedCategory() ? '✓ ' : '' }}{{ category.label }}
+    </option>
   }
 </select>

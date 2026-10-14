@@ -3,6 +3,7 @@
   #searchInput
   id="news-search"
   type="search"
+  [value]="value()"
   placeholder="Enter keywords"
   (input)="searchChange.emit(searchInput.value)"
 />

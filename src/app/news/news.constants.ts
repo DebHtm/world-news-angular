@@ -11,4 +11,4 @@ export const NEWS_CATEGORIES: ReadonlyArray<{ value: NewsCategory; label: string
 ];
 
 export const DEFAULT_NEWS_CATEGORY: NewsCategory = 'general';
-export const NEWS_PAGE_SIZE = 20;
+export const NEWS_PAGE_SIZE = 6;

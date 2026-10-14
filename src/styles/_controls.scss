@@ -1,0 +1,38 @@
+@use './colors' as c;
+@use './typography' as t;
+
+@mixin field {
+  :host {
+    display: block;
+    min-width: 0;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: t.$small;
+    font-weight: 600;
+  }
+  input,
+  select {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid c.$border;
+    border-radius: 9px;
+    background: c.$background;
+    color: c.$text;
+  }
+  input::placeholder {
+    color: c.$muted;
+  }
+  input:hover,
+  select:hover {
+    border-color: c.$muted;
+  }
+  input:focus-visible,
+  select:focus-visible {
+    outline: 2px solid c.$accent;
+    outline-offset: 2px;
+    background: c.$surface;
+  }
+}

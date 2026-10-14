@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -8,5 +8,6 @@ import { Component, output } from '@angular/core';
   styleUrl: './search-bar.scss',
 })
 export class SearchBar {
+  readonly value = input('');
   readonly searchChange = output<string>();
 }

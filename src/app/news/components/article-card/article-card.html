@@ -16,5 +16,13 @@
         {{ article.publishedAt | date: 'mediumDate' }}
       </time>
     </div>
+    <a
+      class="details-link"
+      routerLink="/article"
+      [queryParams]="{ url: article.url }"
+      queryParamsHandling="merge"
+      (click)="saveArticle()"
+      >View details <span aria-hidden="true">→</span></a
+    >
   </div>
 </article>

@@ -1,12 +1,50 @@
 <section class="news-page" aria-labelledby="news-title">
+  <p class="eyebrow">The daily briefing</p>
   <h2 id="news-title">Latest news</h2>
+  <p class="intro">Explore the headlines. Discover what matters to you.</p>
 
   <div class="news-controls">
-    <app-search-bar (searchChange)="onSearchChange($event)" />
-    <app-category-filter (categoryChange)="onCategoryChange($event)" />
+    <app-search-bar [value]="searchQuery" (searchChange)="onSearchChange($event)" />
+    <app-category-filter
+      [selectedCategory]="selectedCategory"
+      (categoryChange)="onCategoryChange($event)"
+    />
   </div>
 
+  @if (searchQuery.trim()) {
+    <p class="search-note">Searching headlines in the selected category.</p>
+  }
+
   <section class="news-cards" aria-label="News articles">
-    <app-article-card [article]="mockArticle" />
+    @if (loading()) {
+      <p class="status-message" role="status">Loading news...</p>
+    } @else if (errorMessage()) {
+      <p class="status-message" role="alert">{{ errorMessage() }}</p>
+    } @else {
+      @for (article of articles(); track $index) {
+        <app-article-card [article]="article" />
+      } @empty {
+        <p class="status-message">No news articles found. Try another keyword or category.</p>
+      }
+    }
   </section>
+  @if (!errorMessage() && totalPages() > 1) {
+    <nav class="pagination" aria-label="News pagination">
+      <button
+        type="button"
+        [disabled]="loading() || currentPage() === 1"
+        (click)="onPageChange(currentPage() - 1)"
+      >
+        Previous
+      </button>
+      <span aria-live="polite">Page {{ currentPage() }} of {{ totalPages() }}</span>
+      <button
+        type="button"
+        [disabled]="loading() || currentPage() >= totalPages()"
+        (click)="onPageChange(currentPage() + 1)"
+      >
+        Next
+      </button>
+    </nav>
+  }
 </section>

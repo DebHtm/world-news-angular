@@ -1,48 +1,76 @@
+@use '../../../../styles/colors' as c;
+@use '../../../../styles/typography' as t;
+
 :host {
   display: block;
+  min-width: 0;
 }
-
 .article-card {
-  max-width: 380px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  background-color: #fff;
-  color: #1f2937;
+  border: 1px solid c.$border;
+  border-radius: 16px;
+  background: c.$surface;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
-
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px c.$shadow;
+}
 .article-image {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 210px;
   object-fit: cover;
+  background: c.$accent-soft;
 }
-
 .article-body {
-  padding: 1rem;
-
-  h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
-  }
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-
+h3 {
+  margin: 0 0 0.75rem;
+  font-family: t.$heading;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
 .article-description {
   display: -webkit-box;
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  line-height: 1.5;
+  color: c.$muted;
 }
-
 .article-meta {
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem;
-  font-size: 0.875rem;
-  color: #475569;
+  font-size: 0.8rem;
+  color: c.$muted;
+}
+.details-link {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid c.$border;
+  font-size: t.$small;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .article-card {
+    transition: none;
+  }
+  .article-card:hover {
+    transform: none;
+  }
 }

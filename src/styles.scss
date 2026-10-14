@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/colors' as c;
+@use './styles/typography' as t;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: c.$background;
+  color: c.$text;
+  font-family: t.$body;
+  font-size: t.$body-size;
+  line-height: t.$line-height;
+}
+input,
+select,
+button {
+  font: inherit;
+}
+a {
+  color: c.$accent;
+  text-underline-offset: 4px;
+}
+a:hover {
+  color: c.$accent-hover;
+}
+a:focus-visible {
+  outline: 3px solid c.$accent;
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+img {
+  max-width: 100%;
+}
