@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NewsMode } from './news/news-mode.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,4 +9,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  protected readonly newsMode = inject(NewsMode);
+}

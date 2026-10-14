@@ -7,6 +7,7 @@ import { CategoryFilter } from '../../components/category-filter/category-filter
 import { SearchBar } from '../../components/search-bar/search-bar';
 import { NewsResponse } from '../../news.models';
 import { NewsService } from '../../news.service';
+import { NewsMode } from '../../news-mode.service';
 import { NewsList } from './news-list';
 
 describe('NewsList filters', () => {
@@ -146,5 +147,13 @@ describe('NewsList filters', () => {
     await router.navigate([], { queryParams: { category: 'general', page: 99 } });
     expect(service.getCategoryNews).toHaveBeenLastCalledWith('general', 2);
     expect(router.navigate.mock.lastCall?.[1].queryParams.page).toBe(2);
+  });
+
+  it('reloads the current filters when the source mode is toggled', async () => {
+    const { fixture, service } = await setup({ category: 'sports' });
+    service.getCategoryNews.mockClear();
+    TestBed.inject(NewsMode).toggle();
+    fixture.detectChanges();
+    expect(service.getCategoryNews).toHaveBeenCalledExactlyOnceWith('sports', 1);
   });
 });

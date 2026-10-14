@@ -2,6 +2,9 @@
   <p class="eyebrow">The daily briefing</p>
   <h2 id="news-title">Latest news</h2>
   <p class="intro">Explore the headlines. Discover what matters to you.</p>
+  @if (isDemoMode()) {
+    <p class="search-note" role="status">Demo mode · Fictional sample articles. No NewsAPI requests are made.</p>
+  }
 
   <div class="news-controls">
     <app-search-bar [value]="searchQuery" (searchChange)="onSearchChange($event)" />

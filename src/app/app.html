@@ -1,6 +1,11 @@
 <header>
   <div class="header-inner">
     <h1><span class="brand-mark" aria-hidden="true">◉</span>World News</h1>
+    <button class="mode-toggle" type="button"
+      [attr.aria-pressed]="newsMode.isDemoMode()"
+      (click)="newsMode.toggle()">
+      {{ newsMode.isDemoMode() ? 'Demo mode · Switch to API' : 'API mode · Switch to demo' }}
+    </button>
     <span class="header-caption">A wider perspective.</span>
   </div>
 </header>

@@ -1,6 +1,18 @@
 @use '../styles/colors' as c;
 @use '../styles/typography' as t;
 
+.mode-toggle {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid c.$border;
+  border-radius: 8px;
+  background: c.$accent-soft;
+  color: c.$accent;
+  font: inherit;
+  cursor: pointer;
+
+  &:focus-visible { outline: 2px solid c.$accent; outline-offset: 3px; }
+}
+
 :host {
   display: block;
 }

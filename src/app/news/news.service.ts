@@ -1,16 +1,38 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, expand, map, Observable, of, reduce, throwError } from 'rxjs';
+import { catchError, EMPTY, expand, map, Observable, of, reduce, shareReplay, throwError } from 'rxjs';
 import { NEWS_API_CONFIG } from './news-api.config';
+import { NewsMode } from './news-mode.service';
 import { DEFAULT_NEWS_CATEGORY, NEWS_PAGE_SIZE } from './news.constants';
-import { NewsApiResponse, NewsCategory, NewsResponse } from './news.models';
+import { MockArticle, NewsApiResponse, NewsCategory, NewsResponse } from './news.models';
 
 @Injectable({ providedIn: 'root' })
 export class NewsService {
   private readonly http = inject(HttpClient);
+  private readonly newsMode = inject(NewsMode);
+  private readonly mockArticles = this.http.get<MockArticle[]>('/data/news.mock.json').pipe(
+    shareReplay({ bufferSize: 1, refCount: true }),
+  );
   private readonly headlineCache = new Map<string, { response: NewsResponse; savedAt: number }>();
 
   private getHeadlinePage(params: Record<string, string>, page: number): Observable<NewsResponse> {
+    if (this.newsMode.isDemoMode()) {
+      return this.mockArticles.pipe(
+        map((articles): NewsResponse => {
+          const query = (params['q'] ?? '').toLowerCase();
+          const filtered = articles.filter((article) =>
+            (!params['category'] || article.category === params['category']) &&
+            (!query || (article.title + ' ' + (article.description ?? '')).toLowerCase().includes(query)),
+          );
+          return {
+            status: 'ok',
+            totalResults: filtered.length,
+            articles: filtered.slice((page - 1) * NEWS_PAGE_SIZE, page * NEWS_PAGE_SIZE),
+          };
+        }),
+        catchError(() => throwError(() => new Error('Unable to load demo news. Please refresh the page.'))),
+      );
+    }
     const key = JSON.stringify(params);
     const cached = this.headlineCache.get(key);
     const snapshot = cached && Date.now() - cached.savedAt < 5 * 60_000
@@ -68,7 +90,7 @@ export class NewsService {
 
   private request(endpoint: string, queryParams: Record<string, string>): Observable<NewsResponse> {
     if (!NEWS_API_CONFIG.apiKey.trim()) {
-      return throwError(() => new Error('Add your NewsAPI key in news-api.config.ts.'));
+      return throwError(() => new Error('Add your NewsAPI key in news-api.local.ts.'));
     }
 
     const params = new HttpParams({

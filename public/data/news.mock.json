@@ -1,0 +1,786 @@
+[
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Community park opens in the city",
+    "description": "Fictional demonstration story: community park opens in the city. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Poland and Germany announce a cultural exchange",
+    "description": "Fictional demonstration story: poland and germany announce a cultural exchange. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "New library welcomes its first visitors",
+    "description": "Fictional demonstration story: new library welcomes its first visitors. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Volunteers clean up a riverbank",
+    "description": "Fictional demonstration story: volunteers clean up a riverbank. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "City launches a weekend street market",
+    "description": "Fictional demonstration story: city launches a weekend street market. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Historic square receives a new walking route",
+    "description": "Fictional demonstration story: historic square receives a new walking route. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Community festival brings neighbors together",
+    "description": "Fictional demonstration story: community festival brings neighbors together. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "general",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Local museum opens an interactive exhibition",
+    "description": "Fictional demonstration story: local museum opens an interactive exhibition. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/general/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Small businesses launch a shared marketplace",
+    "description": "Fictional demonstration story: small businesses launch a shared marketplace. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Local bakery expands its delivery service",
+    "description": "Fictional demonstration story: local bakery expands its delivery service. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Startup introduces reusable packaging",
+    "description": "Fictional demonstration story: startup introduces reusable packaging. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Entrepreneurs meet at a regional forum",
+    "description": "Fictional demonstration story: entrepreneurs meet at a regional forum. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "New workspace opens for small teams",
+    "description": "Fictional demonstration story: new workspace opens for small teams. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Independent shops organize a summer fair",
+    "description": "Fictional demonstration story: independent shops organize a summer fair. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Company begins a four-day working week trial",
+    "description": "Fictional demonstration story: company begins a four-day working week trial. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "business",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "New training program supports young founders",
+    "description": "Fictional demonstration story: new training program supports young founders. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/business/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Film festival announces its opening night",
+    "description": "Fictional demonstration story: film festival announces its opening night. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Outdoor cinema opens in the park",
+    "description": "Fictional demonstration story: outdoor cinema opens in the park. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Theater introduces a new family show",
+    "description": "Fictional demonstration story: theater introduces a new family show. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Young musicians perform at a city concert",
+    "description": "Fictional demonstration story: young musicians perform at a city concert. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Art gallery presents a photography exhibition",
+    "description": "Fictional demonstration story: art gallery presents a photography exhibition. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Book festival welcomes local writers",
+    "description": "Fictional demonstration story: book festival welcomes local writers. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Animation studio releases a short film",
+    "description": "Fictional demonstration story: animation studio releases a short film. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "entertainment",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Community choir prepares a charity concert",
+    "description": "Fictional demonstration story: community choir prepares a charity concert. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/entertainment/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Walking group encourages daily exercise",
+    "description": "Fictional demonstration story: walking group encourages daily exercise. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Hospital opens a new rehabilitation room",
+    "description": "Fictional demonstration story: hospital opens a new rehabilitation room. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Community center hosts a wellbeing workshop",
+    "description": "Fictional demonstration story: community center hosts a wellbeing workshop. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Researchers discuss healthy sleep habits",
+    "description": "Fictional demonstration story: researchers discuss healthy sleep habits. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Public garden offers a quiet relaxation space",
+    "description": "Fictional demonstration story: public garden offers a quiet relaxation space. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Health fair provides information for families",
+    "description": "Fictional demonstration story: health fair provides information for families. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "New bicycle paths encourage active travel",
+    "description": "Fictional demonstration story: new bicycle paths encourage active travel. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "health",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Volunteers support a local blood donation event",
+    "description": "Fictional demonstration story: volunteers support a local blood donation event. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/health/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Students build a model weather station",
+    "description": "Fictional demonstration story: students build a model weather station. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Observatory holds an evening of stargazing",
+    "description": "Fictional demonstration story: observatory holds an evening of stargazing. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Scientists demonstrate a water-saving experiment",
+    "description": "Fictional demonstration story: scientists demonstrate a water-saving experiment. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "School opens a hands-on science laboratory",
+    "description": "Fictional demonstration story: school opens a hands-on science laboratory. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Researchers study plants in urban gardens",
+    "description": "Fictional demonstration story: researchers study plants in urban gardens. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "New exhibition explores ocean ecosystems",
+    "description": "Fictional demonstration story: new exhibition explores ocean ecosystems. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Science club builds a solar-powered model",
+    "description": "Fictional demonstration story: science club builds a solar-powered model. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "science",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Museum hosts a workshop about space",
+    "description": "Fictional demonstration story: museum hosts a workshop about space. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/science/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Local football team wins a friendly tournament",
+    "description": "Fictional demonstration story: local football team wins a friendly tournament. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "City hosts a community running event",
+    "description": "Fictional demonstration story: city hosts a community running event. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Youth basketball league opens its season",
+    "description": "Fictional demonstration story: youth basketball league opens its season. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Cyclists prepare for a charity ride",
+    "description": "Fictional demonstration story: cyclists prepare for a charity ride. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Swimming club welcomes new members",
+    "description": "Fictional demonstration story: swimming club welcomes new members. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Tennis courts reopen after renovation",
+    "description": "Fictional demonstration story: tennis courts reopen after renovation. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Students organize an indoor volleyball match",
+    "description": "Fictional demonstration story: students organize an indoor volleyball match. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "sports",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Weekend sports festival brings families together",
+    "description": "Fictional demonstration story: weekend sports festival brings families together. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/sports/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Students demonstrate a new coding project",
+    "description": "Fictional demonstration story: students demonstrate a new coding project. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/1",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-14T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Library opens a digital learning space",
+    "description": "Fictional demonstration story: library opens a digital learning space. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/2",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-13T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Team builds an accessible navigation app",
+    "description": "Fictional demonstration story: team builds an accessible navigation app. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/3",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-12T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Workshop introduces beginners to robotics",
+    "description": "Fictional demonstration story: workshop introduces beginners to robotics. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/4",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-11T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Developers create a community events website",
+    "description": "Fictional demonstration story: developers create a community events website. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/5",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-10T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "School starts a web development club",
+    "description": "Fictional demonstration story: school starts a web development club. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/6",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-09T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Local team tests an energy monitoring device",
+    "description": "Fictional demonstration story: local team tests an energy monitoring device. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/7",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-08T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  },
+  {
+    "category": "technology",
+    "source": {
+      "id": null,
+      "name": "World News Demo"
+    },
+    "author": "Demo Editorial Team",
+    "title": "Technology fair showcases student inventions",
+    "description": "Fictional demonstration story: technology fair showcases student inventions. This sample is included to demonstrate browsing, search, and pagination.",
+    "url": "https://example.com/demo/technology/8",
+    "urlToImage": "/images/mock-news.svg",
+    "publishedAt": "2026-10-07T09:00:00Z",
+    "content": "This is fictional demonstration content, not a real news report. The application uses this local article to demonstrate the article details page without consuming API requests."
+  }
+]

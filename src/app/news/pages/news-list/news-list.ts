@@ -1,13 +1,14 @@
 import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { catchError, distinctUntilChanged, EMPTY, map, of, switchMap, tap, timer } from 'rxjs';
+import { catchError, combineLatest, distinctUntilChanged, EMPTY, map, of, switchMap, tap, timer } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArticleCard } from '../../components/article-card/article-card';
 import { CategoryFilter } from '../../components/category-filter/category-filter';
 import { SearchBar } from '../../components/search-bar/search-bar';
 import { DEFAULT_NEWS_CATEGORY, NEWS_CATEGORIES, NEWS_PAGE_SIZE } from '../../news.constants';
-import { Article, NewsCategory, NewsFilters } from '../../news.models';
+import { Article, NewsCategory } from '../../news.models';
 import { NewsService } from '../../news.service';
+import { NewsMode } from '../../news-mode.service';
 
 @Component({
   selector: 'app-news-list',
@@ -17,6 +18,8 @@ import { NewsService } from '../../news.service';
   styleUrl: './news-list.scss',
 })
 export class NewsList implements OnInit {
+  private readonly newsMode = inject(NewsMode);
+  protected readonly isDemoMode = this.newsMode.isDemoMode;
   private readonly newsService = inject(NewsService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly route = inject(ActivatedRoute);
@@ -32,9 +35,10 @@ export class NewsList implements OnInit {
   );
 
   ngOnInit(): void {
-    this.route.queryParamMap
+    combineLatest([this.route.queryParamMap, this.newsMode.changes])
       .pipe(
-        map((params): NewsFilters => ({
+        map(([params, isDemoMode]) => ({
+          isDemoMode,
           category:
             NEWS_CATEGORIES.find((item) => item.value === params.get('category'))?.value ??
             DEFAULT_NEWS_CATEGORY,
@@ -50,6 +54,7 @@ export class NewsList implements OnInit {
           (previous, current) =>
             previous.category === current.category &&
             previous.query === current.query &&
+            previous.isDemoMode === current.isDemoMode &&
             previous.page === current.page,
         ),
         switchMap(({ category, query, page }) => {

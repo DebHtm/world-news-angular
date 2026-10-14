@@ -52,7 +52,36 @@ npm start
 
 Open http://localhost:4200/news.
 
-## Validation
+## Demo mode and live API
+
+If you do not have a NewsAPI key, or its request quota has been exhausted,
+you can demonstrate the application using local JSON data. No external API
+requests are made in demo mode, and the key can be empty.
+
+Use the button in the header to switch between **Demo** (local JSON) and
+**API** (live NewsAPI) while the application is running. The news list reloads
+with the current filters. Switching to demo mode is explicit; API failures do
+not silently replace live news with sample data.
+
+Demo mode demonstrates category selection, keyword search, pagination,
+article details, and navigation. The sample articles are fictional and the
+page displays a demo notice.
+
+The app starts in demo mode by default. In `src/app/news/news-api.config.ts`:
+
+```ts
+useMockData: true, // Local JSON; no NewsAPI requests or key required
+```
+
+Set this to `false` to use NewsAPI with your local key, then reload the page.
+You can also switch sources while the app is running using the header button.
+The current news list reloads automatically; refreshing restores the configured default.
+Demo articles live in `public/data/news.mock.json` and are explicitly fictional.
+All seven categories, keyword search, pagination, and article details work in demo mode.
+The local key file must still exist for the configuration import, but its value
+can be empty in demo mode.
+
+## Validation commands
 
 ```bash
 npm test -- --watch=false
@@ -106,7 +135,8 @@ Article links preserve these parameters so returning restores the list state.
   Check current terms at https://newsapi.org/pricing before deployment.
 - A frontend API key remains visible in browser requests and compiled code.
   The ignored file prevents accidental Git commits; a backend is needed to keep a key secret.
-- No demo mode or automatic retries are implemented.
+- Demo mode is an explicit configuration choice, not a silent fallback on API errors.
+- No automatic retries are implemented.
 
 ## Publishing the source to GitHub
 

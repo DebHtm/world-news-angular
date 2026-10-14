@@ -3,14 +3,18 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { TestBed } from '@angular/core/testing';
 import { NEWS_API_CONFIG } from './news-api.config';
 import { NewsService } from './news.service';
+import { NewsMode } from './news-mode.service';
 
 describe('NewsService', () => {
   let service: NewsService;
   let http: HttpTestingController;
   let originalKey: string;
+  let originalMockMode: boolean;
 
   beforeEach(() => {
     originalKey = NEWS_API_CONFIG.apiKey;
+    originalMockMode = NEWS_API_CONFIG.useMockData;
+    NEWS_API_CONFIG.useMockData = false;
     NEWS_API_CONFIG.apiKey = 'test-key';
     TestBed.configureTestingModule({
       providers: [provideHttpClient(), provideHttpClientTesting()],
@@ -21,6 +25,7 @@ describe('NewsService', () => {
 
   afterEach(() => {
     NEWS_API_CONFIG.apiKey = originalKey;
+    NEWS_API_CONFIG.useMockData = originalMockMode;
     http.verify();
   });
 
@@ -71,7 +76,7 @@ describe('NewsService', () => {
       next: () => {
         throw new Error('Expected an error');
       },
-      error: (error: Error) => expect(error.message).toContain('news-api.config.ts'),
+      error: (error: Error) => expect(error.message).toContain('news-api.local.ts'),
     });
     http.expectNone(() => true);
   });
@@ -125,6 +130,34 @@ describe('NewsService', () => {
     });
     service.getCategoryNews('general', 3).subscribe((response) => {
       expect(response.articles).toHaveLength(5);
+    });
+    http.expectNone(() => true);
+  });
+
+  it('loads demo JSON without a key and filters, paginates, and reuses it', () => {
+    NEWS_API_CONFIG.useMockData = true;
+    TestBed.inject(NewsMode).isDemoMode.set(true);
+    NEWS_API_CONFIG.apiKey = '';
+    const articles = Array.from({ length: 8 }, (_, index) => ({
+      category: 'general', title: index === 0 ? 'Poland demo headline' : 'Demo ' + index,
+      url: 'https://example.com/demo/' + index,
+      source: { id: null, name: 'Demo' }, publishedAt: '2026-10-14T09:00:00Z',
+      author: null, description: null, content: null, urlToImage: null,
+    }));
+    service.getCategoryNews('general').subscribe((response) => {
+      expect(response.articles).toHaveLength(6);
+      expect(response.totalResults).toBe(8);
+    });
+    http.expectOne('/data/news.mock.json').flush(articles);
+    service.getCategoryNews('general', 2).subscribe((response) => {
+      expect(response.articles).toHaveLength(2);
+    });
+    service.searchNews('poland').subscribe((response) => {
+      expect(response.articles[0].title).toBe('Poland demo headline');
+      expect(response.totalResults).toBe(1);
+    });
+    service.getCategoryNews('sports').subscribe((response) => {
+      expect(response.articles).toHaveLength(0);
     });
     http.expectNone(() => true);
   });

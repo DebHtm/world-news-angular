@@ -23,6 +23,10 @@ export interface Article {
   content: string | null;
 }
 
+export interface MockArticle extends Article {
+  category: NewsCategory;
+}
+
 export interface NewsResponse {
   status: 'ok';
   totalResults: number;
